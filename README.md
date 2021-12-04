@@ -8,7 +8,21 @@
   
 ---
 # 🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS
-- [x] 
+- [x] Iniciando projeto NextJS - yarn create next-app [nomeDoProjeto]
+- [x] Passando o projeto para typescript - yarn add typescript  @types/react @types/node -D
+- [x] Renomear os arquivos pages > _app.tsx
+- [x] Renomear os arquivos pages > index.tsx.tsx
+- [x] Automaticamente o Next vai criar a configuração do typescript (arquivos: tsconfig.json e next-env.d.ts-definição de tipos do Next, que permite fazer importação de imagens, css dentro dos componentes) 
+- [ ] No arquivo _app.tsx fazer a seguinte alteração:
+```js
+import { AppProps } from 'next/app'
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+```
 
 
 # 🚀 Tecnologias utilizadas neste projeto
