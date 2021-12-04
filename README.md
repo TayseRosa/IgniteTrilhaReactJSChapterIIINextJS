@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Ignite - Trilha ReactJS - Chapter III - Next JS </h1>
 
-## Getting Started
+#Índice
+- [🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS](#-sobre-o-projeto-rocketseat-ignite---trilha-react-js---nextjs)
+- [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
+- [📥 Como usar](#-como-usar)
+- [🚀 Autor](#-autor)
+  
+---
+# 🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS
+- [x] 
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# 🚀 Tecnologias utilizadas neste projeto
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [x] JAVASCRIPT
+- [x] REACT JS
+- [x] TYPESCRIPT
+- [X] NEXT JS
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# 📥 Como usar
+```js
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+    //Clonar o repositório
+    $ git clone https://github.com/TayseRosa/IgniteTrilhaReactJSChapterIIINextJS.git
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    //Entrar no diretório
+    $ cd IgniteTrilhaReactJSChapterIIINextJS
 
-## Learn More
+    //Instalar dependências
+    $ yarn install 
 
-To learn more about Next.js, take a look at the following resources:
+    //Startar o projeto
+    $yarn dev
+    
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+``` 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# 🚀 Autor
 
-## Deploy on Vercel
+<a href="https://www.tayserosa.dev">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/31596454?v=4" width="100px;" alt="Tayse Rosa" style="border-radius:50%"/>
+ <br />
+ <sub><b>Tayse Rosa</b></sub></a> <a href="https://www.tayserosa.dev" title="Tayse Rosa">🚀</a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feito com ❤️ por Tayse Rosa 🚀
+
+👋🏽 Entre em contato!
+
+![Linkedin Badge](https://img.shields.io/badge/-TayseRosa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tayse-rosa-3b683151/)[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TayseRosa/)
+
+<h5> Créditos: Rocketseat - Ignite - Trilha React JS </h5>
