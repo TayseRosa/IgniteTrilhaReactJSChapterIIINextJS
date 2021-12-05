@@ -13,7 +13,7 @@
 - [x] Renomear os arquivos pages > _app.tsx
 - [x] Renomear os arquivos pages > index.tsx.tsx
 - [x] Automaticamente o Next vai criar a configuração do typescript (arquivos: tsconfig.json e next-env.d.ts-definição de tipos do Next, que permite fazer importação de imagens, css dentro dos componentes) 
-- [ ] No arquivo _app.tsx fazer a seguinte alteração:
+- [x] No arquivo _app.tsx fazer a seguinte alteração:
 ```js
 import { AppProps } from 'next/app'
 
@@ -23,6 +23,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export default MyApp
 ```
+- [x] Scoped scss - scss module
+- [x] Configurar fonte externa
 
 
 # 🚀 Tecnologias utilizadas neste projeto
@@ -32,6 +34,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [x] REACT JS
 - [x] TYPESCRIPT
 - [X] NEXT JS
+- [x] SASS
 
 # 📥 Como usar
 ```js
