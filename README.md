@@ -25,6 +25,29 @@ export default MyApp
 ```
 - [x] Scoped scss - scss module
 - [x] Configurar fonte externa
+- [x] Arquivo _document - é carregado apenas 1 vez na aplicação, e não toda vez que a página é recarregada.
+- [x] Modelo do arquivo _document.tsx
+```js
+import Document, { Html, Head, Main, NextScript } from "next/document"
+
+export default class MyDocument extends Document {
+  render(){
+    return(
+      <Html>
+        <Head>
+          <title>Document</title>
+        </Head>
+
+        <body>Document
+
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
+}
+```
 
 
 # 🚀 Tecnologias utilizadas neste projeto
