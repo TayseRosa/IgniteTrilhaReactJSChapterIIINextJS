@@ -9,7 +9,7 @@
 ---
 # 🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS
 
-<img src="/public/images/igNews.png" width="100%" height="300px" />
+<img src="/public/images/igNews.png" width="100%" height="auto" />
 
 
 - [x] Iniciando projeto NextJS - yarn create next-app [nomeDoProjeto]
