@@ -8,6 +8,10 @@
   
 ---
 # 🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS
+
+<img src="./public/images/" width="100%" height="300px" />
+
+
 - [x] Iniciando projeto NextJS - yarn create next-app [nomeDoProjeto]
 - [x] Passando o projeto para typescript - yarn add typescript  @types/react @types/node -D
 - [x] Renomear os arquivos pages > _app.tsx
