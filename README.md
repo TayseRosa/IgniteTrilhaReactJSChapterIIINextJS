@@ -57,7 +57,7 @@ export default class MyDocument extends Document {
 - [x] Formatar numero para formato ex: americano
 ```js
 amount: new Intl.NumberFormat('en-US',{
-    style: 'currency',
+  style: 'currency',
     currency: 'USD'
   }).format(price.unit_amount / 100),
 ```
@@ -69,10 +69,10 @@ amount: new Intl.NumberFormat('en-US',{
 ## Exemplo SSR (Server Side Rendering):
 ```js
 export const getServerSideProps: GetServerSideProps = async () => {
- const price = await stripe.prices.retrieve('price_1K4310BfnfJiSTrM5bdOY2Bg')
+  const price = await stripe.prices.retrieve('price_1K4310BfnfJiSTrM5bdOY2Bg')
 
  const product = {
-  priceId: price.id,
+   priceId: price.id,
   amount: new Intl.NumberFormat('en-US',{
     style: 'currency',
     currency: 'USD'
@@ -92,10 +92,10 @@ export const getServerSideProps: GetServerSideProps = async () => {
 import { GetStaticProps } from 'next';
 
 export const getStaticProps: GetStaticProps = async () => {
- const price = await stripe.prices.retrieve('price_1K4310BfnfJiSTrM5bdOY2Bg')
+  const price = await stripe.prices.retrieve('price_1K4310BfnfJiSTrM5bdOY2Bg')
 
  const product = {
-  priceId: price.id,
+   priceId: price.id,
   amount: new Intl.NumberFormat('en-US',{
     style: 'currency',
     currency: 'USD'
@@ -111,6 +111,7 @@ export const getStaticProps: GetStaticProps = async () => {
   } 
 }
 ```
+- [x] Consumir API de pagamentos Stripe
 
 
 
