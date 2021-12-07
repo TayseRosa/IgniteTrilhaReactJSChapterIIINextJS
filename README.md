@@ -2,6 +2,8 @@
 
 #Índice
 - [🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS](#-sobre-o-projeto-rocketseat-ignite---trilha-react-js---nextjs)
+  - [Exemplo SSR:](#exemplo-ssr)
+  - [Exemplo SSG:](#exemplo-ssg)
 - [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
@@ -52,12 +54,62 @@ export default class MyDocument extends Document {
   }
 }
 ```
--[x] Formatar numero para formato ex: americano
+- [x] Formatar numero para formato ex: americano
 ```js
 amount: new Intl.NumberFormat('en-US',{
     style: 'currency',
     currency: 'USD'
   }).format(price.unit_amount / 100),
+```
+
+- [x] SSR - Server Side Rendering - O Next retorna pro browser as informações das API já renderizadas(mais dinâmico, em tempo real)
+  
+- [x] SSG - Static Site Generation - Além de fazer o que o SSR já faz, ele salva um HTML estático que contém o resultado final daquela tela, sem precisar ter que fazer uma nova chamada a API's(para ter mais performance no carregamento da página) - Tem que ser usada em páginas que podem ser estáticas, nunca em páginas que vão carregar infos de usuários.
+
+## Exemplo SSR:
+```js
+export const getServerSideProps: GetServerSideProps = async () => {
+ const price = await stripe.prices.retrieve('price_1K4310BfnfJiSTrM5bdOY2Bg')
+
+ const product = {
+  priceId: price.id,
+  amount: new Intl.NumberFormat('en-US',{
+    style: 'currency',
+    currency: 'USD'
+  }).format(price.unit_amount / 100),
+ };
+
+  return{
+    props: {
+      product,
+    }
+  }
+}  
+```
+
+## Exemplo SSG:
+```js
+import { GetStaticProps } from 'next';
+
+export const getStaticProps: GetStaticProps = async () => {
+ const price = await stripe.prices.retrieve('price_1K4310BfnfJiSTrM5bdOY2Bg')
+
+ const product = {
+  priceId: price.id,
+  amount: new Intl.NumberFormat('en-US',{
+    style: 'currency',
+    currency: 'USD'
+  }).format(price.unit_amount / 100),
+ };
+
+  return{
+    props: {
+      product,
+    },
+    //Quanto tempo a pagina vai levar para ser recarregada..
+    revalidate: 60 * 60 *24, //24horas
+  } 
+}
 ```
 
 
