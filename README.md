@@ -2,8 +2,8 @@
 
 #Índice
 - [🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS](#-sobre-o-projeto-rocketseat-ignite---trilha-react-js---nextjs)
-  - [Exemplo SSR:](#exemplo-ssr)
-  - [Exemplo SSG:](#exemplo-ssg)
+  - [Exemplo SSR (Server Side Rendering):](#exemplo-ssr-server-side-rendering)
+  - [Exemplo SSG (Static Site Generation):](#exemplo-ssg-static-site-generation)
 - [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
@@ -66,7 +66,7 @@ amount: new Intl.NumberFormat('en-US',{
   
 - [x] SSG - Static Site Generation - Além de fazer o que o SSR já faz, ele salva um HTML estático que contém o resultado final daquela tela, sem precisar ter que fazer uma nova chamada a API's(para ter mais performance no carregamento da página) - Tem que ser usada em páginas que podem ser estáticas, nunca em páginas que vão carregar infos de usuários.
 
-## Exemplo SSR:
+## Exemplo SSR (Server Side Rendering):
 ```js
 export const getServerSideProps: GetServerSideProps = async () => {
  const price = await stripe.prices.retrieve('price_1K4310BfnfJiSTrM5bdOY2Bg')
@@ -87,7 +87,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 }  
 ```
 
-## Exemplo SSG:
+## Exemplo SSG (Static Site Generation):
 ```js
 import { GetStaticProps } from 'next';
 
