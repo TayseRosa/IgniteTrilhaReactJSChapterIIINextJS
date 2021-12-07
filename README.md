@@ -52,6 +52,14 @@ export default class MyDocument extends Document {
   }
 }
 ```
+-[x] Formatar numero para formato ex: americano
+```js
+amount: new Intl.NumberFormat('en-US',{
+    style: 'currency',
+    currency: 'USD'
+  }).format(price.unit_amount / 100),
+```
+
 
 
 # 🚀 Tecnologias utilizadas neste projeto
