@@ -1,16 +1,5 @@
 <h1 align="center">Ignite - Trilha ReactJS - Chapter III - Next JS </h1>
 
-#Índice
-- [🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS](#-sobre-o-projeto-rocketseat-ignite---trilha-react-js---nextjs)
-  - [Exemplo SSR (Server Side Rendering):](#exemplo-ssr-server-side-rendering)
-  - [Exemplo SSG (Static Site Generation):](#exemplo-ssg-static-site-generation)
-- [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
-- [📥 Como usar](#-como-usar)
-- [🚀 Autor](#-autor)
-  
----
-# 🛠 Sobre o projeto Rocketseat Ignite - Trilha React JS - NextJS
-
 <img src="/public/images/igNews.png" width="100%" height="auto" />
 
 
